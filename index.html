@@ -1,1 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">EDIL: An End-to-end Decoupled Imitation Learning Method for Stable Long-Horizon Bimanual Manipulation</h1>
+            <!--
+            <div class="is-size-5 publication-authors">
+              
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Standford University,Stanford,CA,USA<br>IEEE</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+            -->
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!--
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                    -->
+
+
+                    
+                    <!-- Supplementary PDF link -->
+                    <!-- 
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+                  -->
+                
+                  <!-- Github link -->
+                  <!--
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              -->
+
+                
+                <!-- ArXiv abstract Link -->
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/decouple_2.1_18M.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Overview of our work
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As a critical capability for automating complex industrial tasks like precision assembly, bimanual fine-grained manipulation has become a key area of research in robotics, where end-to-end imitation learning (IL) has emerged as a prominent paradigm. However, in long-horizon cooperative tasks, prevalent end-to-end methods suffer from an inadequate representation of critical task features, particularly those essential for fine-grained coordination between the arms and grippers. This deficiency often destabilizes the manipulation policy, leading to issues like spurious gripper activations and culminating in task failure. To address this challenge, we propose an end-to-end Decoupled Imitation Learning (EDIL) method, which decouples the bimanual manipulation task into a Multimodal Arm Policy for global trajectories and a Temporally-Coordinated Attentive Gripper Policy for fine end-effector actions. The arm policy leverages a Transformer-based encoder-decoder architecture to learn multimodal trajectory from expert demonstrations. The gripper policy leverages cross-attention to facilitate implicit, dynamic feature sharing between the arms, integrating sequential state history and visual data to ensure cooperative stability. We evaluated EDIL on three challenging long-horizon manipulation tasks. Experimental results demonstrate that our method significantly outperforms state-of-the-art approaches, particularly on more complex subtasks, showcasing its robustness and effectiveness.
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/img2.png" alt="Overview of our method" style="max-height: 400px; width: auto; display: block; margin: 0 auto;"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/img3.png" alt="Temporally-Coordinated Attentive Gripper Policy"/>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/img4.png" alt="Fourth image description"/>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/img5.png" alt="Fifth image description"/>
+   </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/img6.png" alt="Our Experiments" style="max-height: 400px; width: auto; display: block; margin: 0 auto;"/>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Our Method EDIL</h2>
+    <div class="content has-text-justified">
+      <p>
+        We evaluated EDIL on three challenging long-horizon manipulation tasks. Experimental results demonstrate that our method significantly outperforms state-of-the-art approaches, particularly on more complex subtasks, showcasing its robustness and effectiveness.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <h2 class="subtitle has-text-centered">
+          SUCCESS RATE COMPARISON ACROSS DIFFERENT TASKS AND METHODS
+        </h2>
+        <img src="static/images/successrate.png" alt="Success Rate Comparison"/>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/succ_airpods-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/succ_iwatch-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/succ_tools-1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Algorithm</h2>
+    <div class="content has-text-justified">
+      <p>
+        The complete training pipeline, which integrates the generative modeling of the arm and the coordinated learning of the gripper, is summarized in Algorithm I. During real-world deployment, we employ a closed-loop control strategy. To ensure smooth execution and robustness against sensor noise, we implement Temporal Ensembling for the arm trajectory and a threshold-based binarization for the gripper action. The detailed inference procedure is outlined in Algorithm II.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/algorithm1.png" alt="Algorithm I"/>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/algorithm2.png" alt="Algorithm II"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Robustness and Generalization</h2>
+    
+    <!-- Subsection 1.1 -->
+    <h3 class="title is-4 has-text-centered">Object Geometry and Material Variations</h3>
+    <div class="content has-text-justified">
+        <p>
+            To evaluate the generalization of our policy against physical variations, we conducted experiments on the iWatch Charging task using watch straps with different materials, colors, and lengths. The test set encompasses straps made of Liquid Silicone, Fluor elastomer, and Nylon Weave, featuring distinct colors (green, blue, and black). The quantitative results, demonstrate that our method maintains competitive performance across these diverse configurations. Although the original Liquid Silicone strap yielded the highest success rate, the policy effectively generalized to unseen straps despite significant differences in surface texture and deformation properties.
+        </p>
+    </div>
+    
+    <div class="columns is-centered">
+        <div class="column is-centered has-text-centered">
+            <h2 class="subtitle has-text-centered">
+            Comparisons of original set in iWatch Charging task of object geometry and material variations
+            </h2>
+            <img src="static/images/Table3_Comparisons of original set in iWatch Charging task of object geometry and material variations.png" alt="Comparisons of original set"/>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+       <div class="column is-centered has-text-centered">
+         <img src="static/images/General_iwatch.png" alt="Illustration of object geometry and material variations"/>
+         <h2 class="subtitle has-text-centered">
+           Illustration of object geometry and material variations in the Watch Charging task
+         </h2>
+       </div>
+    </div>
+    
+    <div class="columns is-centered">
+        <div class="column">
+            <video autoplay controls muted loop height="100%">
+                <source src="static/videos/general-liquid silicone(Ours).mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column">
+            <video autoplay controls muted loop height="100%">
+                <source src="static/videos/general-Fluoroelastomer1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column">
+             <video autoplay controls muted loop height="100%">
+                <source src="static/videos/general-Nylon Weave.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Subsection 1.2 -->
+    <br/>
+    <h3 class="title is-4 has-text-centered">Visual Occlusion Analysis</h3>
+    <div class="content has-text-justified">
+        <p>
+            To further assess system reliability under sensory limitations, we simulated camera failures during the inference phase (using models trained on full-view data). Our setup utilizes four cameras: two wrist-mounted and two global cameras (positioned at the Top and Bottom). We established two test groups: one with the Bottom camera obstructed and another with the Top camera obstructed. Experimental results indicate that while obstructing a camera inevitably leads to a slight decrease in success rates compared to the full-observation baseline, the system maintains sufficient resilience to successfully execute the task. This suggests that our decoupled representation can effectively infer necessary control features even from partial visual data. Notably, we observed that obstructing the Top camera resulted in a more significant performance impact than obstructing the Bottom camera. We attribute this to the Top camera's vantage point, which captures a wider field of view and more effective global spatial information essential for bimanual coordination.
+        </p>
+    </div>
+    
+    <div class="columns is-centered">
+        <div class="column is-centered has-text-centered">
+            <h2 class="subtitle has-text-centered">
+                Comparion result of different visual real world experiment setting
+            </h2>
+            <img src="static/images/Table4_Comparion result of different visual real world experiment setting.png" alt="Comparion result"/>
+        </div>
+    </div>
+    
+    <div class="columns is-centered">
+        <div class="column is-centered has-text-centered">
+            <img src="static/images/general_Comparison of different visual in real-world experiment setting.png" alt="Comparison of different visual"/>
+            <h2 class="subtitle has-text-centered">
+            Comparison of different visual in real-world experiment setting
+            </h2>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Different camera resolution and inference frequency</h2>
+    <div class="content has-text-justified">
+      <p>
+        we conducted a comprehensive sensitivity analysis to quantitatively assess these factors. The experimental results demonstrate that when the source resolution is reduced from 640 × 480 to 320 × 240 , the success rate only marginally declines from 65.6% to 58.6%, with the motion remaining fluid and stable. This confirms that EDIL prioritizes robust structural features over redundant high-frequency textures, showcasing exceptional tolerance to image quality degradation. Such visual robustness ensures the system's viability across diverse hardware configurations and lighting conditions.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <h2 class="subtitle has-text-centered">
+          Comparison of Our Method with different camera resolution and inference frequency
+        </h2>
+        <img src="static/images/Table5_Comparison of Our Method with different camera resolution and inference frequency.png" alt="Comparison of Our Method with different camera resolution and inference frequency"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Some typical failure-case</h2>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/Some typical failure-case keyframes in our all tasks.png" alt="Some typical failure-case keyframes in our all tasks"/>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/unsucc_airpods-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/unsucc_iwatch-1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="column">
+        <video autoplay controls muted loop height="100%">
+          <source src="static/videos/unsucc_tools-1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Some hyperparameters</h2>
+    <div class="columns is-centered">
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/Table1_hyperparameters during traing of Temporally Coordinated Attentive Gripper Policy.png" alt="Hyperparameters Table 1"/>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <img src="static/images/Table2_Parameters of the Multimodal Arm Policy.png" alt="Hyperparameters Table 2"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Youtube video -->
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+ <!-- 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+  -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>Waiting...</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
